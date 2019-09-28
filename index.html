@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container my-5">
+		    <div class="row">
+		        <div class="col-lg-6">
+					<h4>Fill out the form</h4>
+		            <form class="bidding-form-apps">
+						<div class="form-group">
+							<input type="checkbox" id="have-header-word">
+							<label for="have-header-word">Have "Start your application with..."?</label>
+						</div>
+						<div class="form-group">
+							<input type="text" id="header-word" class="form-control" placeholder="Ex:- Web Ninja">
+						</div>
+						<div class="form-group">
+							<label for="project-type">Project Type</label>
+							<select id="project-type" class="form-control">
+								<option value="">-- Select One --</option>
+								<option value="develop">Develop New website</option>
+								<option value="needdeveloper">Need Developer</option>
+								<option value="redesign">Redesign Website</option>
+								<option value="edit">Edit Website</option>
+								<option value="theme">Develop Theme</option>
+								<option value="plugin">Develop Plugin</option>
+								<option value="psdtohtml">PSD to HTML</option>
+								<option value="psdtowp">PSD to WordPress</option>
+								<option value="htmltowp">HTML to WordPress</option>
+								<option value="updatewebsite">Upgrade website</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<textarea id="input-project-value" cols="30" rows="6" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="have-questions">
+							<label for="have-questions">Have questions?</label>
+						</div>
+						<div class="form-group">
+							<textarea id="questions" cols="30" rows="6" class="form-control">I have a few question to ask before we start:
+1. What kind of webiste do you like to have?
+2. Do you want your website to be mobile friendly?
+3. How can I make this a great experience for you?</textarea>
+						</div>
+						<div class="form-group">
+							<label for="cta">Call To Action</label>
+							<select id="cta" class="form-control">
+								<option value="">-- Select One --</option>
+								<option value="Have a look at my profile. If you want to know more, let’s talk">Have a look at my profile</option>
+								<option value="Have a look at my website at https://bit.ly/2SCV1W1 If you want to know more, let’s chat.">Have a look at my website</option>
+								<option value="Take a look at my high test scores and if you like what you see, let’s schedule a quick call.">Take a look at my high test scores</option>
+								<option value="Check out my 5 star feedback and excellent reviews and if you think we’re a fit, let’s talk.">Check out my 5 star feedback</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="incoude-ps">
+							<label for="incoude-ps">Have P.S.?</label>
+						</div>
+						<div class="form-group psinfo">
+							<select id="psinfo" class="form-control">
+								<option value="">-- Select One --</option>
+								<option value="When you work with me you get two free revision rounds.">2 free revision</option>
+								<option value="When you work with me you get one week free revision after completion.">1 week free revision</option>
+								<option value="When you work with me you get fixed prices so you always know exactly what you get up front.">Price is fixed</option>
+								<option value="If you contact me today I can start this evening and finish by tomorrow.">Contact me today</option>
+								<option value="If you have any other questions for me, just give me a shout!">Any other questions</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-6">
+					<h4>Copy this text and paste it in your proposal</h4>
+					<div class="bidding-body">
+						<p id="start-words"></p>
+						<p id="greetings">Hi there,</p>
+						<p id="clients-needs"></p>
+						<p id="client-question"></p>
+						<p class="client-cta"></p>
+						<p>Best,<br>Galib</p>
+						<p id="client-ps"></p>
+					</div>
+					<button class="btn btn-info btn-lg mx-auto my-2 d-table" id="copy-text">Click Here to Copy</button>
+					<div class="success-msg"></div>
+				</div>
+		    </div>
+		</div>
+		
+		<script src="assets/js/jquery-1.12.4.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</body>
+</html>
